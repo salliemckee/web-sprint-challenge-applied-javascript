@@ -36,8 +36,8 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 **Steps Required for MVP:**
 
 - [x] Steps 1 and 2 are explained inside the `src/components/header.js` file.
-- [ ] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
-- [ ] Steps 5 and 6 are explained inside the `src/components/card.js` file.
+- [x] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
+- [x] Steps 5 and 6 are explained inside the `src/components/card.js` file.
 
 **Important Notes:**
 
@@ -60,7 +60,21 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Demonstrate your understanding of this week's concepts by answering the following questions:
 
 1. What is the DOM?
+
+DOM stands for Document Object Model. It's a programming interface that represents the document as nodes and objects so programming languages can interact with the page.
+
 2. What is an event?
+
+Events are actions that happen in the system you're programming that the system tells you about so that your code can react to them. (Ex. a mouse click or a key press)
+
 3. What is an event listener?
+
+An event listener is a function in a program that waits, or listens, for an event to occur, then reacts to it.
+
 4. Why would we convert a NodeList into an Array?
+
+NodeLists can be viewed, but the data can't be altered. If you convert it to an array, you can alter the data.
+
 5. What is a component?
+
+A component is a reusable collection of code.
