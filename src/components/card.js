@@ -60,14 +60,13 @@ const cardAppender = (selector) => {
   axios
     .get(`http://localhost:5000/api/articles/`)
     .then((resp) => {
-      const cardJava = Card(resp.data.articles.javascript);
-      console.log(cardJava);
-
-      // for (let key in articles) {
-      //   if (articles.hasOwnProperty(key)) {
-      //     console.log(`${key} : ${articles[key]}`);
-      //   }
-      // }
+      const articles = resp.data.articles;
+      for (const [key, value] of Object.entries(articles)) {
+        value.forEach((article) => {
+          const newCard = Card(article);
+          document.querySelector(selector).appendChild(newCard);
+        });
+      }
     })
 
     .catch((err) => {
